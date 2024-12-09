@@ -41,7 +41,7 @@ The largest valid digit that can be appended in this scenario is 7. Adding any d
         while(ind<n && s.charAt(ind)>='0' && s.charAt(ind)<='9' ){
             
             //checking range
-            if(res>Integer.MAX_VALUE/10 || (res==Integer.MAX_VALUE && s.charAt(ind)-'0'>7))
+            if(res>Integer.MAX_VALUE/10 || (res==Integer.MAX_VALUE/10 && s.charAt(ind)-'0'>7))
             return sign==1?Integer.MAX_VALUE:Integer.MIN_VALUE;
         
         
